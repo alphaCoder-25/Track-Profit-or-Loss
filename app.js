@@ -4,6 +4,16 @@ const currentPrice = document.querySelector("#current-price");
 const submitBtn = document.querySelector("#submit-btn");
 const outputDiv = document.querySelector("#output-div");
 
+submitBtn.addEventListener('click', submitHandler);
+
+function submitHandler() {
+    const ip = initialPrice.value;
+    const qty = stockQuantity.value;
+    const cp = currentPrice.value;
+    
+    calculateProfitAndLoss(ip, qty, cp);
+};
+
 function calculateProfitAndLoss(initialPrice, stockQuantity, currentPrice) {
     if(currentPrice > initialPrice) {
         const profit = (currentPrice - initialPrice) * stockQuantity ;
@@ -20,4 +30,3 @@ function calculateProfitAndLoss(initialPrice, stockQuantity, currentPrice) {
     }
 };
 
-calculateProfitAndLoss(100,2,200);
