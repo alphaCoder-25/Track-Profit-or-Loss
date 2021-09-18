@@ -10,7 +10,7 @@ function submitHandler() {
     const ip = initialPrice.value;
     const qty = stockQuantity.value;
     const cp = currentPrice.value;
-    
+
     calculateProfitAndLoss(ip, qty, cp);
 };
 
@@ -29,4 +29,6 @@ function calculateProfitAndLoss(initialPrice, stockQuantity, currentPrice) {
         console.log(`No pain no gain & No gain no pain`);
     }
 };
+
+
 
