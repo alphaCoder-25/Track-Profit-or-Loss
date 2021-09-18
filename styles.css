@@ -1,8 +1,35 @@
 body {
     text-align: center;
+    background-color: blueviolet;
+}
+
+h1 {
+    color: black;
+}
+
+input{
+    border-color: black;
+    border-radius: 0.3rem;
 }
 
 label {
     display: block;
     padding-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+#submit-btn{
+    margin-bottom: 0.5rem;
+    border-color: black;
+    border-radius: 0.3rem;
+}
+
+#submit-btn:hover {
+    cursor: pointer;
+    background-color: #DC2626;
+    color: white;
+} 
+
+#output-div {
+    font-size: large;
 }
