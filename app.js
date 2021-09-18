@@ -15,7 +15,7 @@ function submitHandler() {
     if(ip && qty && cp !== ''){
     calculateProfitAndLoss(ip, qty, cp);
    } else {
-       outputMessage('Please fill out all the Fields');
+       alert('Please fill out all the Fields');
    }
 };
 
@@ -24,15 +24,15 @@ function calculateProfitAndLoss(initialPrice, stockQuantity, currentPrice) {
     if(currentPrice > initialPrice) {
         const profit = (currentPrice - initialPrice) * stockQuantity ;
         const profitPercentage = (profit / initialPrice) * 100;
-        outputMessage(`Your profit on stocks is ${profit} & your profit percent is ${profitPercentage}`);
+        outputMessage(`Your profit on stocks is ${profit} & your profit percent is ${profitPercentage} 🤩`);
     }
     else if(initialPrice > currentPrice) {
         const loss = (initialPrice - currentPrice) * stockQuantity;
         const lossPercentage = (loss / initialPrice) * 100;
-        outputMessage(`Your loss on stocks is ${loss} & your loss percent is ${lossPercentage}`);
+        outputMessage(`Your loss on stocks is ${loss} & your loss percent is ${lossPercentage} ☹️`);
     } 
     else {
-        outputMessage(`No pain no gain & No gain no pain`);
+        outputMessage(`No pain no gain & No gain no pain 🤷‍♂️`);
     }
 };
 
