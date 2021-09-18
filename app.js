@@ -16,8 +16,8 @@ function calculateProfitAndLoss(initialPrice, stockQuantity, currentPrice) {
         console.log(`Your loss on stocks is ${loss} & your loss percent is ${lossPercentage}`);
     } 
     else {
-        console.log("No pain no gain & No gain no pain");
+        console.log(`No pain no gain & No gain no pain`);
     }
 };
 
-calculateProfitAndLoss(100,20,1000);
+calculateProfitAndLoss(100,2,200);
